@@ -3,7 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet"> 
+  <style>
+    * {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    :root {
+      /* Colores base */
+      --color-fondo: #F9FAFB;
+      --color-fondo-secundario: #FFFFFF;
+      --color-borde: #E5E7EB;
+      --color-sombra: rgba(0, 0, 0, 0.1);
+
+      /* Texto */
+      --color-texto-principal: #1E3A8A;
+      --color-texto-secundario: #6B7280;
+      --color-texto-invertido: #FFFFFF;
+
+      /* Botones y elementos interactivos */
+      --color-boton: #2563EB;
+      --color-boton-hover: #1D4ED8;
+      --color-acento: #3B82F6;
+      --color-oscuro: #1F2937;
+
+      /* Estados */
+      --color-exito: #10B981;
+      --color-advertencia: #F59E0B;
+      --color-error: #EF4444;
+      --color-info: #3B82F6;
+
+      /* Otros */
+      --radio-borde: 8px;
+      --transicion: 0.3s ease;
+      --sombra-suave: 0 4px 10px rgba(0, 0, 0, 0.06);
+    }
+    </style>
 </head>
 <body class=" bg-gray-200">
   <header class="flex flex-row p-5 items-center justify-between bg-[#1E3A8A] text-white">
@@ -12,7 +46,7 @@
         IA Powered CV Generator
       </h1>
     </div>
-    <div class="w-7/12 flex flex-row justify-around">
+    <nav class="w-7/12 flex flex-row justify-around">
       <a href="#" class=" hover:text-black duration-200 ">Generación de CV</a>
       <a href="#" class=" hover:text-black duration-200 ">Generación de Cartas</a>
       <a href="#" class=" hover:text-black duration-200 ">Sign In
@@ -20,10 +54,10 @@
           <path fill-rule="evenodd" d="M12 20a7.966 7.966 0 0 1-5.002-1.756l.002.001v-.683c0-1.794 1.492-3.25 3.333-3.25h3.334c1.84 0 3.333 1.456 3.333 3.25v.683A7.966 7.966 0 0 1 12 20ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 5.5-4.44 9.963-9.932 10h-.138C6.438 21.962 2 17.5 2 12Zm10-5c-1.84 0-3.333 1.455-3.333 3.25S10.159 13.5 12 13.5c1.84 0 3.333-1.455 3.333-3.25S13.841 7 12 7Z" clip-rule="evenodd"/>
         </svg>
       </a>
-    </div>
+    </nav>
   </header>
   <main>
-    <header class="flex flex-row justify-between items-center w-screen py-10 px-5 ">
+    <header class="flex flex-row justify-between items-center w-full py-10 px-5 ">
       <div class="flex flex-col">
         <h2 class=" text-8xl font-extrabold w-6/12 text-clip mb-10">
           Generá tu Curriculum como un pro
@@ -98,40 +132,7 @@
       </section>
     </article>
   </main>
-  <style>
-    * {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-    :root {
-      /* Colores base */
-      --color-fondo: #F9FAFB;
-      --color-fondo-secundario: #FFFFFF;
-      --color-borde: #E5E7EB;
-      --color-sombra: rgba(0, 0, 0, 0.1);
-
-      /* Texto */
-      --color-texto-principal: #1E3A8A;
-      --color-texto-secundario: #6B7280;
-      --color-texto-invertido: #FFFFFF;
-
-      /* Botones y elementos interactivos */
-      --color-boton: #2563EB;
-      --color-boton-hover: #1D4ED8;
-      --color-acento: #3B82F6;
-      --color-oscuro: #1F2937;
-
-      /* Estados */
-      --color-exito: #10B981;
-      --color-advertencia: #F59E0B;
-      --color-error: #EF4444;
-      --color-info: #3B82F6;
-
-      /* Otros */
-      --radio-borde: 8px;
-      --transicion: 0.3s ease;
-      --sombra-suave: 0 4px 10px rgba(0, 0, 0, 0.06);
-    }
-    </style>
+ 
 
     
 </body>
