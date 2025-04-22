@@ -1,14 +1,9 @@
 <!doctype html>
-<!doctype html>
 <html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
-</head>
-<body class=" bg-gray-200">
-  <header class="flex flex-row p-5 items-center justify-between bg-[#1E3A8A] text-white">
-<body>
   <style>
     * {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -19,31 +14,35 @@
       --color-fondo-secundario: #FFFFFF;
       --color-borde: #E5E7EB;
       --color-sombra: rgba(0, 0, 0, 0.1);
-
+  
       /* Texto */
       --color-texto-principal: #1E3A8A;
       --color-texto-secundario: #6B7280;
       --color-texto-invertido: #FFFFFF;
-
+  
       /* Botones y elementos interactivos */
       --color-boton: #2563EB;
       --color-boton-hover: #1D4ED8;
       --color-acento: #3B82F6;
       --color-oscuro: #1F2937;
-
+  
       /* Estados */
       --color-exito: #10B981;
       --color-advertencia: #F59E0B;
       --color-error: #EF4444;
       --color-info: #3B82F6;
-
+  
       /* Otros */
       --radio-borde: 8px;
       --transicion: 0.3s ease;
       --sombra-suave: 0 4px 10px rgba(0, 0, 0, 0.06);
     }
   </style>
-  <nav>
+
+</head>
+<body class=" bg-gray-200 s">
+  <header class="flex flex-row p-5 items-center justify-between bg-[#1E3A8A] text-white">
+  <nav class="block">
   <header class="flex flex-row p-5 items-center justify-between">
     <div>
       <h1 class="inline-block text-3xl font-extrabold">
@@ -61,8 +60,8 @@
     </div>
   </header>
 </nav>
-  <main>
-    <header class="flex flex-row justify-between items-center w-screen py-10 px-5 ">
+  <main class="max-w-screen-xl mx-auto px-4">
+    <header class="flex flex-row justify-between items-center w-full max-w-screen-xl mx-auto py-10 px-5 ">
       <div class="flex flex-col">
         <h2 class=" text-8xl font-extrabold w-6/12 text-clip mb-10">
           Generá tu Curriculum como un pro
@@ -71,11 +70,11 @@
           Una <strong>plataforma</strong> moderna que transforma tu experiencia en un cv profesional
         </p>
       </div>
-      <div class="mr-8">
+      <div class="mr-8 ">
         <img
           src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTWH4usBevJ8KNBxr0VeEuS1kbGQg9KcGoVisRMQba1QsRKcMLBBiY1KH_pJLSvD1xiAMteCM12ry3JpJ68ZzWCfuXuDN6KeIfGy7WCeIRkIMM3W4Hf53Hq0A"
           alt="pala"
-          class="w-200 h-auto "
+          class="w-[200px] max-w-full h-auto object-contain"
         />
       </div>
       
@@ -115,5 +114,5 @@
   </main>
 
 </body>
-  
+
 </html>
