@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
 </head>
+<body class=" bg-gray-200">
+  <header class="flex flex-row p-5 items-center justify-between bg-[#1E3A8A] text-white">
 <body>
   <style>
     * {
@@ -43,23 +45,27 @@
   </style>
   <header class="flex flex-row p-5 items-center justify-between">
     <div>
-      <h1 class="inline-block">
+      <h1 class="inline-block text-3xl font-extrabold">
         IA Powered CV Generator
       </h1>
     </div>
-    <div class="w-6/12 flex flex-row justify-between">
-      <a href="#">Genereación de CV</a>
-      <a href="#">Cartas de Gnereación</a>
-      <a href="#">Sign In</a>
+    <div class="w-7/12 flex flex-row justify-around">
+      <a href="#" class=" hover:text-black duration-200 ">Generación de CV</a>
+      <a href="#" class=" hover:text-black duration-200 ">Generación de Cartas</a>
+      <a href="#" class=" hover:text-black duration-200 ">Sign In
+        <svg class="w-6 h-6 hover:text-black duration-200 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" d="M12 20a7.966 7.966 0 0 1-5.002-1.756l.002.001v-.683c0-1.794 1.492-3.25 3.333-3.25h3.334c1.84 0 3.333 1.456 3.333 3.25v.683A7.966 7.966 0 0 1 12 20ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 5.5-4.44 9.963-9.932 10h-.138C6.438 21.962 2 17.5 2 12Zm10-5c-1.84 0-3.333 1.455-3.333 3.25S10.159 13.5 12 13.5c1.84 0 3.333-1.455 3.333-3.25S13.841 7 12 7Z" clip-rule="evenodd"/>
+        </svg>
+      </a>
     </div>
   </header>
   <main>
-    <header class="flex flex-row justify-between items-center w-screen py-10 px-5">
+    <header class="flex flex-row justify-between items-center w-screen py-10 px-5 ">
       <div class="flex flex-col">
-        <h2 class="text-5xl font-extrabold w-6/12 text-clip mb-10">
+        <h2 class=" text-8xl font-extrabold w-6/12 text-clip mb-10">
           Generá tu Curriculum como un pro
         </h2>
-        <p class="w-6/12">
+        <p class=" text-2xl w-6/12">
           Una <strong>plataforma</strong> moderna que transforma tu experiencia en un cv profesional
         </p>
       </div>
@@ -67,38 +73,45 @@
         <img
           src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTWH4usBevJ8KNBxr0VeEuS1kbGQg9KcGoVisRMQba1QsRKcMLBBiY1KH_pJLSvD1xiAMteCM12ry3JpJ68ZzWCfuXuDN6KeIfGy7WCeIRkIMM3W4Hf53Hq0A"
           alt="pala"
-          class="w-80 h-auto"
+          class="w-200 h-auto "
         />
       </div>
+      
     </header>
-    <button>Generar</button>
-    <article>
-      <section>
-        <header>
-          <h3>Generacción de Cv</h3>
-        </header>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati velit minus perspiciatis at aliquid adipisci voluptate sed atque suscipit maxime repudiandae dolores, dolor ipsam nam. Eligendi nesciunt eos totam fuga.
-        </p>
+    <button class="bg-[#2563EB] hover:bg-[#1D4ED8] hover:scale-110 duration-200 text-white font-extrabold rounded-lg p-3 cursor-pointer mx-auto block">
+      Empezar a Generar
+      <svg class="w-6 h-6 text-gray-800 dark:text-white inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"  width="24"   height="24" fill="currentColor" viewBox="0 0 24 24">
+      <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4.243a1 1 0 1 0-2 0V11H7.757a1 1 0 1 0 0 2H11v3.243a1 1 0 1 0 2 0V13h3.243a1 1 0 1 0 0-2H13V7.757Z" clip-rule="evenodd"/>
+    </svg>
+    </button>
+    <article class="grid grid-cols-3 grid-rows-1 gap-4 p-10 mx-auto w-10/12">
+      <section class="w-10/12 bg-[#F9FAFB]  hover:bg-[#E5E7EB] hover:scale-105 duration-200 cursor-pointer rounded-lg shadow-md p-5">
+      <header class=" w-full border-b-2 border-[#E5E7EB]">
+        <h3 class=" font-extrabold text-2xl ">Generacción de Cv</h3>
+      </header>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati velit minus perspiciatis at aliquid adipisci voluptate sed atque suscipit maxime repudiandae dolores, dolor ipsam nam. Eligendi nesciunt eos totam fuga.
+      </p>
       </section>
-      <section>
-        <header>
-          <h3>Cartas de Presentación</h3>
-        </header>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore aspernatur temporibus iste beatae earum? Debitis reprehenderit autem inventore ea ipsum, illum dolores ut delectus, officia eveniet, mollitia sit omnis! Dolorem?
-        </p>
+      <section class="w-10/12 bg-[#F9FAFB] hover:bg-[#E5E7EB] hover:scale-105 duration-200 cursor-pointer rounded-lg shadow-md p-5">
+      <header class=" w-full border-b-2 border-[#E5E7EB]">
+        <h3 class=" font-extrabold text-2xl ">Cartas de Presentación</h3>
+      </header>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore aspernatur temporibus iste beatae earum? Debitis reprehenderit autem inventore ea ipsum, illum dolores ut delectus, officia eveniet, mollitia sit omnis! Dolorem?
+      </p>
       </section>
-      <section>
-        <header>
-          <h3>Optimizacion de Perfil</h3>
-        </header>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit debitis repellat sunt eaque iusto molestias corporis labore modi quo dolorem, asperiores error facere velit natus vel. Dicta molestias hic repellat.
-        </p>
+      <section class="w-10/12 bg-[#F9FAFB] hover:bg-[#E5E7EB] hover:scale-105 duration-200 cursor-pointer rounded-lg shadow-md p-5">
+      <header class=" w-full border-b-2 border-[#E5E7EB]">
+        <h3 class=" font-extrabold text-2xl ">Optimización de Perfil</h3>
+      </header>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit debitis repellat sunt eaque iusto molestias corporis labore modi quo dolorem, asperiores error facere velit natus vel. Dicta molestias hic repellat.
+      </p>
       </section>
     </article>
   </main>
- 
+
 </body>
+  
 </html>
