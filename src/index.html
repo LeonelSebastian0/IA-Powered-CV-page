@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet"> 
+  
+  <link href="./src/output.css" rel="stylesheet">
   <style>
     * {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -39,7 +41,9 @@
     }
     </style>
 </head>
-<body class=" bg-gray-200">
+
+<body class=" bg-error">
+
   <header class="flex flex-row p-5 items-center justify-between bg-[#1E3A8A] text-white">
     <div>
       <h1 class="inline-block text-3xl font-extrabold">
@@ -49,13 +53,14 @@
     <nav class="w-7/12 flex flex-row justify-around">
       <a href="#" class=" hover:text-black duration-200 ">Generación de CV</a>
       <a href="#" class=" hover:text-black duration-200 ">Generación de Cartas</a>
-      <a href="#" class=" hover:text-black duration-200 ">Sign In
-        <svg class="w-6 h-6 hover:text-black duration-200 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+      <a href="#" class=" hover:text-black duration-200 flex items-center gap-3"><span class=" bg-white rounded-full flex items-center justify-center">Sign In</span>
+        <svg class="flex w-6 h-6 hover:text-black duration-200 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
           <path fill-rule="evenodd" d="M12 20a7.966 7.966 0 0 1-5.002-1.756l.002.001v-.683c0-1.794 1.492-3.25 3.333-3.25h3.334c1.84 0 3.333 1.456 3.333 3.25v.683A7.966 7.966 0 0 1 12 20ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 5.5-4.44 9.963-9.932 10h-.138C6.438 21.962 2 17.5 2 12Zm10-5c-1.84 0-3.333 1.455-3.333 3.25S10.159 13.5 12 13.5c1.84 0 3.333-1.455 3.333-3.25S13.841 7 12 7Z" clip-rule="evenodd"/>
         </svg>
       </a>
     </nav>
   </header>
+
   <main>
     <header class="flex flex-row justify-between items-center w-full py-10 px-5 ">
       <div class="flex flex-col">
@@ -65,6 +70,23 @@
         <p class=" text-2xl w-6/12">
           Una <strong>plataforma</strong> moderna que transforma tu experiencia en un cv profesional
         </p>
+
+        <button class="
+        bg-[#2563EB] 
+        hover:bg-[#1D4ED8] hover:scale-110
+        duration-200
+        text-white font-extrabold 
+        rounded-lg
+        p-3 
+        cursor-pointer
+        mx-auto flex items-center gap-3
+ 
+       ">
+       <span class="p-1">Empezar a Generar</span>
+       <svg class="w-6 h-6 text-white dark:text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"  width="24"   height="24" fill="currentColor" viewBox="0 0 24 24">
+       <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4.243a1 1 0 1 0-2 0V11H7.757a1 1 0 1 0 0 2H11v3.243a1 1 0 1 0 2 0V13h3.243a1 1 0 1 0 0-2H13V7.757Z" clip-rule="evenodd"/>
+     </svg>
+     </button>
       </div>
       <div class="mr-8 ">
         <img
@@ -75,21 +97,7 @@
       </div>
       
     </header>
-    <button class="
-       bg-[#2563EB] 
-       hover:bg-[#1D4ED8] hover:scale-110
-       duration-200
-       text-white font-extrabold 
-       rounded-lg
-       p-3 
-       cursor-pointer
-       mx-auto block
-      ">
-      Empezar a Generar
-      <svg class="w-6 h-6 text-gray-800 dark:text-white inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"  width="24"   height="24" fill="currentColor" viewBox="0 0 24 24">
-      <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm11-4.243a1 1 0 1 0-2 0V11H7.757a1 1 0 1 0 0 2H11v3.243a1 1 0 1 0 2 0V13h3.243a1 1 0 1 0 0-2H13V7.757Z" clip-rule="evenodd"/>
-    </svg>
-    </button>
+   
     <article class="grid grid-cols-3 grid-rows-1 gap-4 p-10 mx-auto w-10/12">
       <section class="
       w-10/12
